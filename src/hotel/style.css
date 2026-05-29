@@ -1,0 +1,206 @@
+/* =====================================================
+   Grand Vista Hotel — JavaFX Stylesheet
+   ===================================================== */
+
+/* Root */
+.root-pane {
+    -fx-background-color: #f0f2f5;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ── Header ─────────────────────────────────────── */
+.header {
+    -fx-background-color: linear-gradient(to right, #1a3a5c, #2d6a9f);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 2);
+}
+
+.header-title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.header-sub {
+    -fx-text-fill: rgba(255,255,255,0.65);
+    -fx-font-size: 12px;
+}
+
+.stat-caption {
+    -fx-text-fill: rgba(255,255,255,0.65);
+    -fx-font-size: 10px;
+}
+
+.stat-value {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* ── Tabs ────────────────────────────────────────── */
+.main-tabs {
+    -fx-background-color: transparent;
+}
+
+.main-tabs .tab-header-area .tab-header-background {
+    -fx-background-color: #e4e8ee;
+}
+
+.main-tabs .tab {
+    -fx-background-color: #dde2eb;
+    -fx-padding: 8 18;
+    -fx-font-size: 13px;
+}
+
+.main-tabs .tab:selected {
+    -fx-background-color: white;
+    -fx-font-weight: bold;
+}
+
+.main-tabs .tab-content-area {
+    -fx-background-color: white;
+    -fx-border-color: #dde2eb;
+    -fx-border-width: 1 0 0 0;
+}
+
+/* ── Section card ────────────────────────────────── */
+.section-card {
+    -fx-background-color: #f8f9fb;
+    -fx-border-color: #dde2eb;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-size: 13px;
+}
+
+.section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a3a5c;
+}
+
+/* ── Table ───────────────────────────────────────── */
+.data-table {
+    -fx-background-color: white;
+    -fx-border-color: #dde2eb;
+    -fx-border-radius: 6;
+    -fx-font-size: 13px;
+}
+
+.data-table .column-header {
+    -fx-background-color: #1a3a5c;
+}
+
+.data-table .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.data-table .table-row-cell:odd {
+    -fx-background-color: #f6f8fb;
+}
+
+.data-table .table-row-cell:selected {
+    -fx-background-color: #cfe2f3;
+}
+
+/* ── Detail pane ─────────────────────────────────── */
+.detail-pane {
+    -fx-background-color: #f8f9fb;
+    -fx-border-color: #dde2eb;
+    -fx-border-radius: 6;
+    -fx-padding: 12;
+}
+
+.detail-key {
+    -fx-font-weight: bold;
+    -fx-text-fill: #555;
+    -fx-font-size: 12px;
+}
+
+/* ── Form ────────────────────────────────────────── */
+.form-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #444;
+    -fx-font-size: 13px;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #c5cdd8;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 6 10;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused {
+    -fx-border-color: #2d6a9f;
+}
+
+.combo-field {
+    -fx-background-color: white;
+    -fx-border-color: #c5cdd8;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-font-size: 13px;
+}
+
+.date-picker .text-field {
+    -fx-padding: 5 8;
+}
+
+.price-preview {
+    -fx-text-fill: #1a6b2a;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* ── Buttons ─────────────────────────────────────── */
+.btn {
+    -fx-padding: 8 18;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.btn-primary {
+    -fx-background-color: #2d6a9f;
+    -fx-text-fill: white;
+}
+.btn-primary:hover { -fx-background-color: #1a5080; }
+
+.btn-secondary {
+    -fx-background-color: #6c757d;
+    -fx-text-fill: white;
+}
+.btn-secondary:hover { -fx-background-color: #545b62; }
+
+.btn-success {
+    -fx-background-color: #28a745;
+    -fx-text-fill: white;
+}
+.btn-success:hover { -fx-background-color: #1e7e34; }
+
+.btn-warning {
+    -fx-background-color: #e09b2d;
+    -fx-text-fill: white;
+}
+.btn-warning:hover { -fx-background-color: #c07a10; }
+
+.btn-danger {
+    -fx-background-color: #dc3545;
+    -fx-text-fill: white;
+}
+.btn-danger:hover { -fx-background-color: #a71d2a; }
+
+/* ── Status bar ──────────────────────────────────── */
+.status-bar {
+    -fx-background-color: #1a3a5c;
+}
+
+.status-label {
+    -fx-text-fill: rgba(255,255,255,0.55);
+    -fx-font-size: 11px;
+}
